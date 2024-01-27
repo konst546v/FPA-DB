@@ -17,7 +17,7 @@ y2_values <- as.numeric(gsub("%","",plot_data$y$CPUPerc))
 x_labels <- c(plot_data$x)
 # the first and last entry contains times in which there was no execution, which mess up statistical stuff
 y1_values_exec = y1_values[-c(1, length(y1_values))]
-y2_values_exec = y1_values[-c(1, length(y1_values))]
+y2_values_exec = y2_values[-c(1, length(y2_values))]
 # printing all labels messes up the output, lets just print it each n = 3 
 poss <- seq(1,length(plot_data$x),by=3)
 # always include last elem
